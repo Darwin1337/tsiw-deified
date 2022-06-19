@@ -45,7 +45,7 @@ public class Astronaut : MonoBehaviour
     [SerializeField] Text countGreens;
     [SerializeField] GameObject gameController;
 
-    // Variáveis para mudar de cor suavemente
+    // Variï¿½veis para mudar de cor suavemente
     private bool changeColor = false;
     private Color colorTarget = new Color32(46, 46, 46, 1);
     private Color colorInitiator = new Color32(46, 46, 46, 1);
@@ -156,7 +156,7 @@ public class Astronaut : MonoBehaviour
     {
         if (isOnTop)
         {
-            // Caso esteja em baixo executa este código para saltar
+            // Caso esteja em baixo executa este cï¿½digo para saltar
             if (!isAnimating)
             {
                 anim.SetTrigger("jump");
@@ -181,7 +181,7 @@ public class Astronaut : MonoBehaviour
         }
         else
         {
-            // Caso esteja em baixo executa este código para saltar
+            // Caso esteja em baixo executa este cï¿½digo para saltar
             if (!isAnimating)
             {
                 anim.SetTrigger("jump");
@@ -230,6 +230,7 @@ public class Astronaut : MonoBehaviour
                 Destroy(other.gameObject);
                 changeColor = true;
                 godMode = true;
+                effect1.Play();
                 colorInitiator = colorTarget;
                 colorTarget = new Color32(0, 255, 255, 1);
                 duration = 0;
@@ -248,6 +249,9 @@ public class Astronaut : MonoBehaviour
                 
                 countReds.text = vermelhos.ToString();
                 velocidade = 1.6f;
+                breathing.pitch = 3.0f;
+                footsteps.pitch = 3.0f;
+                effect3.Play();
                 Destroy(other.gameObject);
                 changeColor = true;
                 colorInitiator = colorTarget;
@@ -268,6 +272,9 @@ public class Astronaut : MonoBehaviour
                 countGreens.text = verdes.ToString();
                 velocidade = 0.6f;
                 //StartCoroutine(ExampleCoroutine1());
+                footsteps.pitch = 1.0f;
+                breathing.pitch = 1.0f;
+                effect2.Play();
                 Destroy(other.gameObject);
                 changeColor = true;
                 colorInitiator = colorTarget;
@@ -291,6 +298,7 @@ public class Astronaut : MonoBehaviour
                 anim.SetTrigger("die");
 				
 				footsteps.Stop();
+                breathing.Stop();
 
                 if (PlayerPrefs.GetFloat("Score") < segundos)
                     PlayerPrefs.SetFloat("Score", segundos);
@@ -311,6 +319,8 @@ public class Astronaut : MonoBehaviour
         hasStopped = true;
         if (godMode)
             godMode = false;
+        footsteps.pitch = 2.05f;
+        breathing.pitch = 2.0f;
         velocidade = 1f;
         showOutline = false;
         changeColor = true;
