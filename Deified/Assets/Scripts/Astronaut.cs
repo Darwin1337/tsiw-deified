@@ -76,9 +76,11 @@ public class Astronaut : MonoBehaviour
         
         if (!gameController.GetComponent<GameController>().isGameOver)
         {
+            if (Input.GetKeyDown(KeyCode.Space)){
+                jumpSound.Play();
+            }
             if (Input.GetKeyDown(KeyCode.Space) || isAnimating)
             {
-				jumpSound.Play();
                 CharacterJump();
             }
         }
@@ -205,7 +207,6 @@ public class Astronaut : MonoBehaviour
                 }
             }
         }
-        jumpSound.Play();
 	}
 
     void MostrarMetros(float relogio)
