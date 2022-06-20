@@ -15,21 +15,21 @@ O jogador perde se a sua pontuação for inferior a zero ou se embater contra um
 
 ## Referências
 
-Gráficos low poly no geral
-No Man's Sky por Hello Games
-Geometry Dash por RobTop Games
-Interstellar por Christopher Nolan
-Tenet por Christopher Nolan
-Modelo 3D do Astronauta por Ekaterina (https://sketchfab.com/kattynote) - Special thanks
-Texturas por João Paulo (https://3dtextures.me/) - Special thanks
-Outline asset por Chris Nolet (https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488)
-Sons
-https://freesound.org/people/michael_kur95/sounds/254545/
-https://freesound.org/people/Patrick_Corra/sounds/633234/
-https://freesound.org/people/spacydreamy/sounds/477170/
-https://freesound.org/people/LogicMoon/sounds/161615/
-https://freesound.org/people/InspectorJ/sounds/345560/
-https://freesound.org/people/quetzalcontla/sounds/337747/
-https://freesound.org/people/Kodack/sounds/256519/
-https://freesound.org/people/Eelke/sounds/462598/
-https://freesound.org/people/onderwish/sounds/421865/
+- Gráficos low poly no geral
+- No Man's Sky por Hello Games
+- Geometry Dash por RobTop Games
+- Interstellar por Christopher Nolan
+- Tenet por Christopher Nolan
+- Modelo 3D do Astronauta por Ekaterina (https://sketchfab.com/kattynote) - Special thanks
+- Texturas por João Paulo (https://3dtextures.me/) - Special thanks
+- Outline asset por Chris Nolet (https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488)
+- Sons
+- https://freesound.org/people/michael_kur95/sounds/254545/
+- https://freesound.org/people/Patrick_Corra/sounds/633234/
+- https://freesound.org/people/spacydreamy/sounds/477170/
+- https://freesound.org/people/LogicMoon/sounds/161615/
+- https://freesound.org/people/InspectorJ/sounds/345560/
+- https://freesound.org/people/quetzalcontla/sounds/337747/
+- https://freesound.org/people/Kodack/sounds/256519/
+- https://freesound.org/people/Eelke/sounds/462598/
+- https://freesound.org/people/onderwish/sounds/421865/
