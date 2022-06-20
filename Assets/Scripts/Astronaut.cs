@@ -34,6 +34,9 @@ public class Astronaut : MonoBehaviour
     public AudioSource effect1;
     public AudioSource effect2;
     public AudioSource effect3;
+    public AudioSource countdown;
+    public AudioSource crescendo;
+    public AudioSource endgame;
 
     public Volume volume;
     private Vignette vignette;
@@ -226,6 +229,8 @@ public class Astronaut : MonoBehaviour
         {
             if((System.DateTime.Now - seconds).TotalSeconds > 10)
             {
+                countdown.Play();
+                crescendo.Play();
                 azuis += 1;
                 countBlues.text = azuis.ToString();
                 Destroy(other.gameObject);
@@ -247,7 +252,8 @@ public class Astronaut : MonoBehaviour
             {
                
                 vermelhos += 1;
-                
+                countdown.Play();
+                crescendo.Play();
                 countReds.text = vermelhos.ToString();
                 velocidade = 1.6f;
                 breathing.pitch = 3.0f;
@@ -269,7 +275,8 @@ public class Astronaut : MonoBehaviour
             {
                 //StopCoroutine(ExampleCoroutine1());
                 verdes += 1;
-                
+                countdown.Play();
+                crescendo.Play();
                 countGreens.text = verdes.ToString();
                 velocidade = 0.6f;
                 //StartCoroutine(ExampleCoroutine1());
@@ -300,7 +307,10 @@ public class Astronaut : MonoBehaviour
 				
 				footsteps.Stop();
                 breathing.Stop();
-
+                if(!endgame.isPlaying){
+                    endgame.Play();
+                }
+                
                 if (PlayerPrefs.GetFloat("Score") < segundos)
                     PlayerPrefs.SetFloat("Score", segundos);
 
